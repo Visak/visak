@@ -35,8 +35,12 @@ window.location = "fb://page/274575506055985";
 <center><a class="btn-lg btn-on-color btn" href="#" onclick="three()">Redeem</a></center></div></div><div class="extra-options"></div></div></div>
 <script>
 function three(){
-setTimeout(function(){ window.location = "https://www.twitter.com/fox"; }, 25);
-window.location = "twitter://user?screen_name=fox";
+    
+ if (new Date().valueOf() - now > 1000) return;
+     window.location = "https://www.twitter.com/zara";
+}, 25);
+     
+window.location = "twitter://user?screen_name=zara";
 }
 </script>
 <!--TWITTER DEAL END-->
