@@ -7,8 +7,9 @@
 <center><a class="btn-lg btn-on-color btn" href="#" onclick="one()">Redeem</a></center></div></div><div class="extra-options"></div></div></div>
 <script>function one(){
 var now = new Date().valueOf();    
+window.location = "instagram://user?username=zara";
  setTimeout(function () {
- if (new Date().valueOf() - now > 1000) window.location = "instagram://user?username=zara";
+ if (new Date().valueOf() - now > 1000) return;
   else
      window.location = "https://www.instagram.com/zara"; }, 1000);
 
