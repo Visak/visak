@@ -6,7 +6,12 @@
 <h1 class="applet-name">1 FREE Kolache (insta)</h1>	<p class="applet-description">Bring in a friend or colleague</p>
 <center><a class="btn-lg btn-on-color btn" href="#" onclick="one()">Redeem</a></center></div></div><div class="extra-options"></div></div></div>
 <script>function one(){
-setTimeout(function(){ window.location = "https://www.instagram.com/zara"; }, 25);
+var now = new Date().valueOf();
+setTimeout(function () {
+if (new Date().valueOf() - now > 1000) return;
+     window.location = "https://www.instagram.com/zara";
+}, 25);
+
 window.location = "instagram://user?username=zara";
 }
 </script>
